@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>spark内核架构深度剖析 | 锦夕</title>
-<link rel="shortcut icon" href="https://jinxi11.github.io/favicon.ico?v=1586443270098">
+<link rel="shortcut icon" href="https://jinxi11.github.io/favicon.ico?v=1586443414567">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://jinxi11.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="spark内核架构深度剖析 | 锦夕 - Atom Feed" href="https://jinxi11.github.io/atom.xml">
@@ -12,16 +12,6 @@
 
 
     <meta name="description" content="内核原理
-
-宽窄依赖
-
-YARN提交模式
-
-SparkContext原理
-
-Master主备切换
-
-Master注册机制
 
 ..." />
     <meta name="keywords" content="spark" />
@@ -33,7 +23,7 @@ Master注册机制
       <div class="main-content">
         <div class="site-header">
   <a href="https://jinxi11.github.io">
-  <img class="avatar" src="https://jinxi11.github.io/images/avatar.png?v=1586443270098" alt="">
+  <img class="avatar" src="https://jinxi11.github.io/images/avatar.png?v=1586443414567" alt="">
   </a>
   <h1 class="site-title">
     锦夕
@@ -106,26 +96,11 @@ Master注册机制
               <div class="post-content">
                 <h1 id="内核原理">内核原理</h1>
 <figure data-type="image" tabindex="1"><img src="https://jinxi11.github.io/post-images/1586442563816.png" alt="" loading="lazy"></figure>
-<h1 id="宽窄依赖">宽窄依赖</h1>
-<figure data-type="image" tabindex="2"><img src="https://jinxi11.github.io/post-images/1586443018692.png" alt="" loading="lazy"></figure>
-<h1 id="yarn提交模式">YARN提交模式</h1>
-<figure data-type="image" tabindex="3"><img src="https://jinxi11.github.io/post-images/1586443070341.png" alt="" loading="lazy"></figure>
-<h1 id="sparkcontext原理">SparkContext原理</h1>
-<figure data-type="image" tabindex="4"><img src="https://jinxi11.github.io/post-images/1586443118740.png" alt="" loading="lazy"></figure>
-<h1 id="master主备切换">Master主备切换</h1>
-<figure data-type="image" tabindex="5"><img src="https://jinxi11.github.io/post-images/1586443175783.png" alt="" loading="lazy"></figure>
-<h1 id="master注册机制">Master注册机制</h1>
-<figure data-type="image" tabindex="6"><img src="https://jinxi11.github.io/post-images/1586443229891.png" alt="" loading="lazy"></figure>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li><a href="#%E5%86%85%E6%A0%B8%E5%8E%9F%E7%90%86">内核原理</a></li>
-<li><a href="#%E5%AE%BD%E7%AA%84%E4%BE%9D%E8%B5%96">宽窄依赖</a></li>
-<li><a href="#yarn%E6%8F%90%E4%BA%A4%E6%A8%A1%E5%BC%8F">YARN提交模式</a></li>
-<li><a href="#sparkcontext%E5%8E%9F%E7%90%86">SparkContext原理</a></li>
-<li><a href="#master%E4%B8%BB%E5%A4%87%E5%88%87%E6%8D%A2">Master主备切换</a></li>
-<li><a href="#master%E6%B3%A8%E5%86%8C%E6%9C%BA%E5%88%B6">Master注册机制</a></li>
 </ul>
 
               </div>
